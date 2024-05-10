@@ -29,6 +29,68 @@ class SERVER:
             connection.commit()
             connection.close()
 
+    from datetime import datetime, timedelta
+
+    def generateKpi(self):
+        results = []
+        results_month_ago = []
+        results_two_month_ago = []
+
+
+        # Obtener la fecha actual
+        datetime_now = datetime.now()
+
+        last_month = datetime_now - timedelta(days=datetime_now.day)
+        two_months_ago = last_month - timedelta(days=last_month.day)
+        three_months_ago = two_months_ago - timedelta(days=two_months_ago.day)
+
+        last_month = last_month.strftime("%Y-%m")
+        two_months_ago = two_months_ago.strftime("%Y-%m")
+        three_months_ago = three_months_ago.strftime("%Y-%m")
+
+        with open("logs/"+last_month + ".log", "r") as l:
+            for log in l:
+                if log[0]=="E" :
+                        results.append(1)
+                else:
+                    results.append(0)
+
+        with open("logs/"+two_months_ago + ".log", "r") as l:
+            for log in l:
+                if log[0]=="E" :
+                        results_month_ago.append(1)
+                else:
+                    results_month_ago.append(0)
+
+        with open("logs/"+three_months_ago + ".log", "r") as l:
+            for log in l:
+                if log[0]=="E" :
+                        results_two_month_ago.append(1)
+                else:
+                    results_two_month_ago.append(0)
+
+        ratio_month = sum(results)/len(results)*100
+        ratio_last_month = sum(results_month_ago)/len(results_month_ago)*100
+        ratio_last_two_months = sum(results_two_month_ago)/len(results_two_month_ago)*100
+        tendency = ""
+        if (ratio_month == ratio_last_two_months and ratio_month == ratio_last_month):
+            #TENDENCIA NULA
+            tendency = "0"   
+        if (ratio_month >= ratio_last_two_months and ratio_month >= ratio_last_month):
+            #TENDENCIA POSITIVA
+            tendency = "+"
+        if (ratio_month < ratio_last_two_months or ratio_month < ratio_last_month):
+            #TENDENCIA NEGATIVA
+            tendency = "-"
+
+        with open("kpi.log", "r") as kpi:
+            if len(kpi.readlines()) <= 2:
+                tendency = "0"
+
+        with open("kpi.log", "a") as kpi:
+            kpi.write(last_month + ", ratio: " + str(ratio_month) + ", tendency: " + tendency +"\n")
+
+
         ##############################
         # ADD NEW LOG ENTRY FUNCTION #
     def addEntryLog(self,msg):
@@ -36,12 +98,12 @@ class SERVER:
             log_path = "logs/" + date + '.log'
             date = datetime.now().strftime('%d/%m/%Y %H:%M')
             if not path.exists(log_path):
+                self.generateKpi()
                 with open(log_path, 'x') as l:
                     l.write(msg + ", timestamp: " + date)
             else:
                 with open(log_path, 'a') as l:
                     l.write("\n" + msg + ", timestamp: " + date)
-            #self.generateKpi
         ##########################################
         # VERIFICATION OF THE SIGNATURE FUNCTION #
     def signatureVerification(self,signature, pbk, msg, employeeID):

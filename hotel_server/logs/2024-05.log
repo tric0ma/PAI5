@@ -1,27 +1,5 @@
-EXITO, El trabajador 58883 ha solicitado: 1 camas, 1 mesas, 1 sillas y 1 sillones,  timestamp: 04/05/2024 11:29
-EXITO, El trabajador 58883 ha solicitado: 1 camas, 1 mesas, 1 sillas y 1 sillones,  timestamp: 04/05/2024 11:31
-EXITO, El trabajador 58883 ha solicitado: 1 camas, 1 mesas, 123 sillas y 123 sillones,  timestamp: 04/05/2024 11:33
-EXITO, El trabajador 58883 ha solicitado: 123 camas, 123 mesas, 123 sillas y 123 sillones,  timestamp: 04/05/2024 11:37
-FALLO, Se ha recibido un mensaje de un usuario no verificado d�a 06/05/2024 11:44
-EXITO, El trabajador 58883 ha solicitado: 1 camas, 1 mesas, 1 sillas y 1 sillones,  timestamp: 07/05/2024 11:50
-EXITO, El trabajador 58883 ha solicitado: 1 camas, 1 mesas, 1 sillas y 1 sillones , timestamp: 07/05/2024 11:55
-EXITO, El trabajador 58883 ha solicitado: 1 camas, 12 mesas, 2 sillas y 4 sillones , timestamp: 08/05/2024 12:27
-EXITO, El trabajador 58883 ha solicitado: 1 camas, 300 mesas, 2 sillas y 4 sillones , timestamp: 10/05/2024 12:28
-FALLO, Se ha recibido un mensaje de un usuario no verificado, timestamp: 10/05/2024 12:29
-FALLO, El mensaje del usuario 84513 ha sido corrompido, timestamp: 10/05/2024 12:29
-FALLO, El mensaje del usuario 84513 ha sido corrompido, timestamp: 10/05/2024 13:02
-FALLO, Posible DoS, el usuario 58883 ha realizado demasiadas peticiones, timestamp: 10/05/2024 13:02
-EXITO, El trabajador 58883 ha solicitado: 1 camas, 35 mesas, 2 sillas y 4 sillones , timestamp: 10/05/2024 13:04
-EXITO, El trabajador 58883 ha solicitado: 1 camas, 35 mesas, 2 sillas y 4 sillones , timestamp: 10/05/2024 13:06
-EXITO, El trabajador 58883 ha solicitado: 4 camas, 4 mesas, 4 sillas y 4 sillones , timestamp: 10/05/2024 13:08
-EXITO, El trabajador 58883 ha solicitado: 43 camas, 42 mesas, 41 sillas y 40 sillones , timestamp: 10/05/2024 13:10
-EXITO, El trabajador 58883 ha solicitado: 43 camas, 42 mesas, 41 sillas y 40 sillones , timestamp: 10/05/2024 13:18
-EXITO, El trabajador 58883 ha solicitado: 43 camas, 42 mesas, 41 sillas y 40 sillones , timestamp: 10/05/2024 13:21
-EXITO, El trabajador 58883 ha solicitado: 43 camas, 42 mesas, 41 sillas y 40 sillones , timestamp: 10/05/2024 13:22
-EXITO, El trabajador 58883 ha solicitado: 43 camas, 42 mesas, 41 sillas y 40 sillones , timestamp: 10/05/2024 13:30
-EXITO, El trabajador 58883 ha solicitado: 43 camas, 42 mesas, 41 sillas y 40 sillones , timestamp: 10/05/2024 13:40
-FALLO, Posible DoS, el usuario 58883 ha realizado demasiadas peticiones, timestamp: 10/05/2024 15:55
-FALLO, Posible DoS, el usuario 58883 ha realizado demasiadas peticiones, timestamp: 10/05/2024 15:57
-FALLO, Posible DoS, el usuario ha realizado demasiadas peticiones, timestamp: 10/05/2024 15:59
-EXITO, El trabajador 58883 ha solicitado: 1 camas, 2 mesas, 3 sillas y 4 sillones , timestamp: 10/05/2024 16:00
-EXITO, El trabajador 58883 ha solicitado: 1 camas, 2 mesas, 3 sillas y 4 sillones , timestamp: 10/05/2024 16:02
+EXITO, El trabajador 58883 ha solicitado: 1 camas, 1 mesas, 1 sillas y 2 sillones , timestamp: 10/05/2024 16:19
+EXITO, El trabajador 58883 ha solicitado: 1 camas, 1 mesas, 1 sillas y 2 sillones , timestamp: 10/05/2024 16:19
+EXITO, El trabajador 58883 ha solicitado: 12 camas, 12 mesas, 12 sillas y 2 sillones , timestamp: 10/05/2024 16:20
+FALLO, Se ha recibido un mensaje de un usuario no verificado, timestamp: 10/05/2024 16:21
+FALLO, El mensaje del usuario 84513 ha sido corrompido, timestamp: 10/05/2024 16:21
