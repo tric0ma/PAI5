@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\tric0\Desktop\server\venv_pai5
+set VIRTUAL_ENV=C:\Users\tric0\Desktop\pai_5_repo\PAI5\hotel_server\venv_pai5
 
 if not defined PROMPT set PROMPT=$P$G
 
