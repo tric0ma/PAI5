@@ -127,7 +127,7 @@ class SERVER:
                 # Retrieve the first row of results #
                 count = cursor.fetchone()[0]
                 connection.close()
-                if count <= 3333:
+                if count <= 3:
                     return True
                 else:
                     self.addEntryLog("FALLO, Posible DoS, el usuario ha realizado demasiadas peticiones")
