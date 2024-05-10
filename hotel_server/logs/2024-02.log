@@ -1,0 +1,12 @@
+EXITO, El trabajador 58883 ha solicitado: 1 camas, 1 mesas, 1 sillas y 1 sillones,  timestamp: 04/02/2024 11:29
+EXITO, El trabajador 58883 ha solicitado: 1 camas, 1 mesas, 1 sillas y 1 sillones,  timestamp: 04/02/2024 11:31
+EXITO, El trabajador 58883 ha solicitado: 1 camas, 1 mesas, 123 sillas y 123 sillones,  timestamp: 04/02/2024 11:33
+EXITO, El trabajador 58883 ha solicitado: 123 camas, 123 mesas, 123 sillas y 123 sillones,  timestamp: 04/02/2024 11:37
+FALLO, Se ha recibido un mensaje de un usuario no verificado d�a 06/02/2024 11:44
+EXITO, El trabajador 58883 ha solicitado: 1 camas, 1 mesas, 1 sillas y 1 sillones,  timestamp: 07/02/2024 11:50
+EXITO, El trabajador 58883 ha solicitado: 1 camas, 1 mesas, 1 sillas y 1 sillones , timestamp: 07/02/2024 11:55
+EXITO, El trabajador 58883 ha solicitado: 1 camas, 12 mesas, 2 sillas y 4 sillones , timestamp: 08/02/2024 12:27
+EXITO, El trabajador 58883 ha solicitado: 1 camas, 300 mesas, 2 sillas y 4 sillones , timestamp: 10/02/2024 12:28
+FALLO, Se ha recibido un mensaje de un usuario no verificado, timestamp: 10/02/2024 12:29
+FALLO, El mensaje del usuario 84513 ha sido corrompido, timestamp: 10/02/2024 12:29
+FALLO, El mensaje del usuario 84513 ha sido corrompido, timestamp: 10/02/2024 13:02
